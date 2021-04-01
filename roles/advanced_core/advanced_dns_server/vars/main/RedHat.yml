@@ -1,0 +1,10 @@
+---
+advanced_dns_server_RedHat:
+  packages_to_install:
+    - bind
+  services_to_start:
+    - named
+  firewall_services_to_add:
+    - dns
+  bind_user: named
+  bind_group: named
